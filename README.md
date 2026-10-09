@@ -1,6 +1,8 @@
 # Natnael Debebe | Portfolio
 
-Personal portfolio website. Plain HTML, CSS and JavaScript: no build step, no dependencies.
+Personal portfolio website, live at https://natnaeldebebe.vercel.app
+
+ Plain HTML, CSS and JavaScript: no build step, no dependencies.
 
 ## Structure
 
