@@ -1,0 +1,9 @@
+# Raw design files and originals: kept locally, not deployed
+_source/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

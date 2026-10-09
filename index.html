@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Natnael Debebe | Full-Stack Software Engineer</title>
+    <meta
+      name="description"
+      content="Natnael Debebe is a full-stack software engineer with four years building fintech systems, ERPs, Telegram commerce and AI-powered products."
+    />
+    <meta
+      property="og:title"
+      content="Natnael Debebe | Full-Stack Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Fintech, ERPs, Telegram commerce and AI products, designed and built end to end."
+    />
+    <!-- After deploying, change these two to full URLs, e.g. https://natnaeldebebe.vercel.app/assets/img/og-image.jpg -->
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="assets/img/og-image.jpg" />
+    <meta name="theme-color" content="#f4f3ef" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b3be0'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='13' text-anchor='middle' fill='white'%3END%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // Apply saved theme before paint, and flag that JS animations are available
+      document.documentElement.classList.add("js");
+      try {
+        const t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="brand" aria-label="Natnael Debebe, home">
+          <span class="brand__mark">ND</span>
+          <span class="brand__name">Natnael Debebe</span>
+        </a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="i-moon"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+            <svg
+              class="i-sun"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              />
+            </svg>
+          </button>
+          <a href="#contact" class="btn btn--dark btn--sm">Hire me</a>
+          <button
+            class="icon-btn nav__burger"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero container">
+        <div class="hero__top">
+          <div>
+            <p class="pill" data-reveal="up">
+              <span class="dot"></span> Available for new projects
+            </p>
+            <h1 class="hero__title" data-split>
+              Building software that is
+              <span class="accent">clear,</span> useful and built to last.
+            </h1>
+          </div>
+          <figure class="hero__photo" data-reveal="up" style="--d: 0.3s">
+            <img
+              src="assets/img/portrait.webp"
+              alt="Natnael Debebe"
+              width="896"
+              height="1200"
+            />
+            <figcaption>
+              <strong>Natnael Debebe</strong
+              ><span>Full-Stack Software Engineer</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hero__bottom">
+          <p class="hero__lead" data-reveal="up" style="--d: 0.55s">
+            I'm Natnael Debebe, a full-stack software engineer with four years
+            of experience building high-volume fintech systems, business
+            software and AI-powered products, from the database all the way to
+            the interface.
+          </p>
+          <div class="hero__cta" data-reveal="up" style="--d: 0.7s">
+            <a href="#work" class="btn btn--accent"
+              >View my work
+              <svg
+                viewBox="0 0 24 24"
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 5v14M5 12l7 7 7-7" />
+              </svg>
+            </a>
+            <a
+              href="assets/Natnael_Debebe_Resume.pdf"
+              class="btn btn--ghost"
+              download
+              >Download CV
+              <svg
+                viewBox="0 0 24 24"
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STACK MARQUEE ============ -->
+      <section class="strip" aria-label="Technologies">
+        <div class="container strip__inner">
+          <span class="label">Tech I work with</span>
+          <div class="marquee">
+            <ul class="marquee__track">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Supabase</li>
+              <li>Flutter</li>
+              <li>Redis</li>
+              <li>LLM agents</li>
+            </ul>
+            <ul class="marquee__track" aria-hidden="true">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>Django</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Supabase</li>
+              <li>Flutter</li>
+              <li>Redis</li>
+              <li>LLM agents</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WORK ============ -->
+      <section class="section container" id="work">
+        <p class="label label--accent" data-reveal="up">Selected work</p>
+        <div class="work__head">
+          <h2 class="h2" data-split>Projects I'm proud of</h2>
+          <div
+            class="filters"
+            role="tablist"
+            aria-label="Filter projects"
+            data-reveal="up"
+            style="--d: 0.2s"
+          >
+            <button
+              class="chip is-active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All
+            </button>
+            <button
+              class="chip"
+              data-filter="web"
+              role="tab"
+              aria-selected="false"
+            >
+              Web
+            </button>
+            <button
+              class="chip"
+              data-filter="mobile"
+              role="tab"
+              aria-selected="false"
+            >
+              Mobile
+            </button>
+            <button
+              class="chip"
+              data-filter="ai"
+              role="tab"
+              aria-selected="false"
+            >
+              AI
+            </button>
+            <button
+              class="chip"
+              data-filter="dashboard"
+              role="tab"
+              aria-selected="false"
+            >
+              Dashboard
+            </button>
+          </div>
+        </div>
+        <div class="grid" id="projectGrid"><!-- rendered by script.js --></div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="container about__inner">
+          <div class="about__portrait" data-reveal="up">
+            <img
+              src="assets/img/portrait.webp"
+              alt="Portrait of Natnael Debebe"
+              data-parallax="0.08"
+            />
+          </div>
+          <div class="about__body">
+            <p class="label" data-reveal="up">About me</p>
+            <p class="about__headline" data-split>
+              I build reliable, scalable software, and I care just as much
+              about how it feels to use.
+            </p>
+            <p class="about__text" data-reveal="up" style="--d: 0.2s">
+              For four years I've shipped core features of a digital payments
+              platform: POS systems, a UPI wallet, payment gateways and an
+              end-to-end voucher product, on a microservices stack tuned for
+              heavy transaction load. Alongside that I train and evaluate AI
+              models, and build my own products for Ethiopian businesses:
+              Telegram commerce, ERPs and operations dashboards.
+            </p>
+
+            <div class="stats" data-stagger>
+              <div class="stat">
+                <span class="stat__num"><span data-count="4">0</span>+</span
+                ><span class="stat__label">Years of experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num"><span data-count="2">0</span>B+</span
+                ><span class="stat__label"
+                  >Birr processed on platforms I built</span
+                >
+              </div>
+              <div class="stat">
+                <span class="stat__num"><span data-count="6">0</span>+</span
+                ><span class="stat__label">Products shipped</span>
+              </div>
+            </div>
+
+            <ul class="timeline" data-stagger>
+              <li>
+                <span class="timeline__role">Full Stack Developer</span
+                ><span>SantimPay</span><span class="mono">2022 - 2026</span>
+              </li>
+              <li>
+                <span class="timeline__role">AI Trainer</span><span>Mercor</span
+                ><span class="mono">2024 - Now</span>
+              </li>
+              <li>
+                <span class="timeline__role">AI Trainer</span
+                ><span>Outlier</span><span class="mono">2025 - 2026</span>
+              </li>
+              <li>
+                <span class="timeline__role">BSc Software Engineering</span
+                ><span>BITS College</span><span class="mono">2022 - 2026</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section class="section container services" id="services">
+        <div class="services__intro">
+          <p class="label label--accent" data-reveal="up">Services</p>
+          <h2 class="h2" data-split>How I can help</h2>
+          <p class="muted" data-reveal="up" style="--d: 0.2s">
+            I work with you from first sketch to production clear scope, regular
+            demos, and software you own completely.
+          </p>
+        </div>
+        <div class="accordion" id="accordion" data-stagger>
+          <div class="acc is-open">
+            <button class="acc__head" aria-expanded="true">
+              <span class="acc__num">01</span
+              ><span class="acc__title">Full-stack web applications</span
+              ><span class="acc__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc__panel">
+              <div>
+                <p>
+                  Custom web apps from database to UI: authentication, roles
+                  &amp; permissions, dashboards, reports and integrations,
+                  deployed and maintained.
+                </p>
+                <ul class="tags">
+                  <li>React / Next.js</li>
+                  <li>Node.js / Django</li>
+                  <li>PostgreSQL</li>
+                  <li>RBAC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="acc">
+            <button class="acc__head" aria-expanded="false">
+              <span class="acc__num">02</span
+              ><span class="acc__title">Fintech &amp; payment integrations</span
+              ><span class="acc__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc__panel">
+              <div>
+                <p>
+                  Wallets, POS, vouchers and payment gateways built for real
+                  transaction volume, with the query tuning and reliability
+                  that money needs.
+                </p>
+                <ul class="tags">
+                  <li>Payment gateways</li>
+                  <li>Chapa</li>
+                  <li>Microservices</li>
+                  <li>Performance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="acc">
+            <button class="acc__head" aria-expanded="false">
+              <span class="acc__num">03</span
+              ><span class="acc__title">ERP &amp; business systems</span
+              ><span class="acc__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc__panel">
+              <div>
+                <p>
+                  Inventory, sales and multi-branch stock systems that replace
+                  spreadsheets and paper, built around how your team really
+                  works.
+                </p>
+                <ul class="tags">
+                  <li>Inventory</li>
+                  <li>Multi-branch</li>
+                  <li>Reporting</li>
+                  <li>Ethiopian calendar</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="acc">
+            <button class="acc__head" aria-expanded="false">
+              <span class="acc__num">04</span
+              ><span class="acc__title">AI agents &amp; Telegram apps</span
+              ><span class="acc__icon" aria-hidden="true"></span>
+            </button>
+            <div class="acc__panel">
+              <div>
+                <p>
+                  AI shopping assistants grounded in your live product data,
+                  plus Telegram bots and mini apps that sell where your
+                  customers already are.
+                </p>
+                <ul class="tags">
+                  <li>LLM agents</li>
+                  <li>FastAPI</li>
+                  <li>Telegram Mini Apps</li>
+                  <li>Bilingual UX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRINCIPLES (how I work) ============ -->
+      <section class="container" aria-label="How I work">
+        <div class="testimonial" data-reveal="up">
+          <p class="label label--accent">How I work</p>
+          <svg
+            class="quote"
+            viewBox="0 0 32 24"
+            width="32"
+            height="24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M0 24V13.7C0 5.4 4.2 1 12.6 0l1 3.3C8.8 4.4 6.6 7 6.3 11H12v13H0zm18 0V13.7C18 5.4 22.2 1 30.6 0l1 3.3C26.8 4.4 24.6 7 24.3 11H30v13H18z"
+            />
+          </svg>
+          <div class="testimonial__track" id="tTrack">
+            <figure class="t is-active">
+              <blockquote>
+                “Software that handles people's money has no room for ‘mostly
+                works’. I design for the busiest day, the slowest connection and
+                the edge case nobody planned for.”
+              </blockquote>
+              <figcaption>
+                <img class="avatar" src="assets/img/portrait.webp" alt="" /><span
+                  ><strong>Natnael Debebe</strong
+                  ><small>On reliability</small></span
+                >
+              </figcaption>
+            </figure>
+            <figure class="t">
+              <blockquote>
+                “The best feature is the one staff can use on day one without
+                training. I sit with the people who'll use the product, then
+                remove everything that slows them down.”
+              </blockquote>
+              <figcaption>
+                <img class="avatar" src="assets/img/portrait.webp" alt="" /><span
+                  ><strong>Natnael Debebe</strong
+                  ><small>On simplicity</small></span
+                >
+              </figcaption>
+            </figure>
+            <figure class="t">
+              <blockquote>
+                “I own what I build from the first sketch to production and
+                beyond: clear scope, regular demos, and code your team can keep
+                growing after I hand it over.”
+              </blockquote>
+              <figcaption>
+                <img class="avatar" src="assets/img/portrait.webp" alt="" /><span
+                  ><strong>Natnael Debebe</strong
+                  ><small>On ownership</small></span
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <div class="testimonial__nav">
+            <span class="mono muted" id="tCount">1 / 3</span>
+            <button class="round-btn" id="tPrev" aria-label="Previous quote">
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              class="round-btn round-btn--dark"
+              id="tNext"
+              aria-label="Next quote"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="container contact__inner">
+          <div class="contact__copy">
+            <p class="label label--light" data-reveal="up">Contact</p>
+            <h2 class="contact__title" data-split>
+              Let's build something great together.
+            </h2>
+            <p data-reveal="up" style="--d: 0.3s">
+              Tell me a little about your project and I'll get back to you
+              within 24 hours.
+            </p>
+            <a
+              class="contact__email"
+              href="mailto:natnaeldebebe463@gmail.com"
+              data-reveal="up"
+              style="--d: 0.4s"
+              >natnaeldebebe463@gmail.com</a
+            >
+          </div>
+          <form
+            class="form"
+            id="contactForm"
+            novalidate
+            data-reveal="up"
+            style="--d: 0.2s"
+          >
+            <div class="form__row">
+              <label
+                >Name<input
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                  autocomplete="name"
+              /></label>
+              <label
+                >Email<input
+                  name="email"
+                  type="email"
+                  placeholder="you@company.com"
+                  required
+                  autocomplete="email"
+              /></label>
+            </div>
+            <fieldset>
+              <legend>What do you need?</legend>
+              <div class="form__chips">
+                <label class="radio"
+                  ><input
+                    type="radio"
+                    name="need"
+                    value="Web application"
+                    checked
+                  /><span>Web app</span></label
+                >
+                <label class="radio"
+                  ><input
+                    type="radio"
+                    name="need"
+                    value="Fintech / payments"
+                  /><span>Fintech</span></label
+                >
+                <label class="radio"
+                  ><input
+                    type="radio"
+                    name="need"
+                    value="ERP / business system"
+                  /><span>ERP / system</span></label
+                >
+                <label class="radio"
+                  ><input
+                    type="radio"
+                    name="need"
+                    value="AI agent / Telegram app"
+                  /><span>AI / Telegram</span></label
+                >
+              </div>
+            </fieldset>
+            <label
+              >Project details<textarea
+                name="details"
+                rows="4"
+                placeholder="Goals, timeline, budget range…"
+                required
+              ></textarea>
+            </label>
+            <!-- Honeypot: hidden from people, catches spam bots -->
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <p class="form__error" id="formError" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn--dark btn--block">
+              Send message
+              <svg
+                viewBox="0 0 24 24"
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="muted">
+        © <span id="year"></span> Natnael Debebe. All rights reserved.
+      </p>
+      <nav class="footer__links" aria-label="Social">
+        <a
+          class="social"
+          href="https://www.linkedin.com/in/natnael-debebe-1574391a8/"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"
+            />
+          </svg>
+          LinkedIn</a
+        >
+        <a
+          class="social"
+          href="https://github.com/natidebe"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3z"
+            />
+          </svg>
+          GitHub</a
+        >
+        <a
+          class="social"
+          href="assets/Natnael_Debebe_Resume.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+            />
+            <path d="M14 2v6h6M8 13h8M8 17h5" />
+          </svg>
+          Resume</a
+        >
+        <a class="social" href="#top" data-to-top>
+          <svg
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+          Back to top</a
+        >
+      </nav>
+    </footer>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <dialog class="modal" id="projectModal" aria-labelledby="mTitle">
+      <button class="icon-btn modal__close" id="mClose" aria-label="Close">
+        <svg
+          viewBox="0 0 24 24"
+          width="18"
+          height="18"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="modal__media"><img id="mImage" alt="" /></div>
+      <div class="modal__thumbs" id="mThumbs"></div>
+      <div class="modal__body">
+        <p class="label label--accent" id="mMeta"></p>
+        <h3 class="h3" id="mTitle"></h3>
+        <p class="muted" id="mDesc"></p>
+        <ul class="checks" id="mPoints"></ul>
+        <ul class="tags" id="mTags"></ul>
+        <div class="modal__actions" id="mActions"></div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
