@@ -23,6 +23,25 @@ const PROJECTS = [
     repo: "https://github.com/natidebe/Cloth-store-Ai-platform-",
   },
   {
+    title: "Clinic Management System",
+    type: "Web app · Healthcare operations",
+    year: "2026",
+    tags: ["web", "dashboard"],
+    cover: "thumb-clinic.webp",
+    images: ["thumb-clinic.webp", "clinic-dashboard.webp", "clinic-new-patient.webp", "clinic-lab-orders.webp", "clinic-users-roles.webp"],
+    description:
+      "Run the whole clinic from one screen: patient records, a live queue, lab orders, billing in Birr and role-based staff access in one fast web app, from the front desk to the lab.",
+    points: [
+      "Patient registry with quick registration and phone numbers for visit and lab-result SMS",
+      "Live patient queue with tokens, assigned doctor, status and wait times",
+      "Lab orders and results with a test catalog, assignment to lab techs and payment status",
+      "Billing in ETB with daily revenue and invoices at a glance",
+      "Role-based access for Admin, Doctor, Lab Tech and Receptionist, plus a full audit trail",
+    ],
+    stack: ["Healthcare", "Dashboard", "Role-based", "Audit trail"],
+    repo: "", // no public repo yet; add the URL here when there is one
+  },
+  {
     title: "Furniture ERP",
     type: "Web app · Inventory & sales",
     year: "2026",
